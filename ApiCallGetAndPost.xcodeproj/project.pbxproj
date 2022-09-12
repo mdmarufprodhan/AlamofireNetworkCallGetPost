@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195AD5DB28CE4A0A003A3024 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 195AD5DA28CE4A0A003A3024 /* Alamofire */; };
+		195AD5DE28CE4C69003A3024 /* ApiRequestGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD5DD28CE4C69003A3024 /* ApiRequestGet.swift */; };
+		195AD5E328CE4D30003A3024 /* GetAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD5E228CE4D30003A3024 /* GetAPIModel.swift */; };
+		195AD5E528CE4D74003A3024 /* GetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD5E428CE4D74003A3024 /* GetViewModel.swift */; };
+		195AD5E728CE52B7003A3024 /* PostApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD5E628CE52B7003A3024 /* PostApiModel.swift */; };
+		195AD5E928CE52FE003A3024 /* ApiRequestPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD5E828CE52FE003A3024 /* ApiRequestPost.swift */; };
+		195AD5EB28CE533B003A3024 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195AD5EA28CE533B003A3024 /* PostViewModel.swift */; };
+		1975CEEF28CF0ABD00F86223 /* createPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975CEEE28CF0ABD00F86223 /* createPostView.swift */; };
+		1975CEF128CF10EB00F86223 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975CEF028CF10EB00F86223 /* AppTextField.swift */; };
 		19D6954628CD15BF0079AC94 /* ApiCallGetAndPostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6954528CD15BF0079AC94 /* ApiCallGetAndPostApp.swift */; };
 		19D6954828CD15BF0079AC94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D6954728CD15BF0079AC94 /* ContentView.swift */; };
 		19D6954A28CD15C30079AC94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D6954928CD15C30079AC94 /* Assets.xcassets */; };
@@ -14,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		195AD5DD28CE4C69003A3024 /* ApiRequestGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestGet.swift; sourceTree = "<group>"; };
+		195AD5E228CE4D30003A3024 /* GetAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAPIModel.swift; sourceTree = "<group>"; };
+		195AD5E428CE4D74003A3024 /* GetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetViewModel.swift; sourceTree = "<group>"; };
+		195AD5E628CE52B7003A3024 /* PostApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApiModel.swift; sourceTree = "<group>"; };
+		195AD5E828CE52FE003A3024 /* ApiRequestPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestPost.swift; sourceTree = "<group>"; };
+		195AD5EA28CE533B003A3024 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		1975CEEE28CF0ABD00F86223 /* createPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPostView.swift; sourceTree = "<group>"; };
+		1975CEF028CF10EB00F86223 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		19D6954228CD15BF0079AC94 /* ApiCallGetAndPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiCallGetAndPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D6954528CD15BF0079AC94 /* ApiCallGetAndPostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallGetAndPostApp.swift; sourceTree = "<group>"; };
 		19D6954728CD15BF0079AC94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +43,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195AD5DB28CE4A0A003A3024 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195AD5DC28CE4C50003A3024 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				195AD5DD28CE4C69003A3024 /* ApiRequestGet.swift */,
+				195AD5E828CE52FE003A3024 /* ApiRequestPost.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		195AD5DF28CE4CED003A3024 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				195AD5E428CE4D74003A3024 /* GetViewModel.swift */,
+				195AD5EA28CE533B003A3024 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		195AD5E028CE4CF8003A3024 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19D6954728CD15BF0079AC94 /* ContentView.swift */,
+				1975CEEE28CF0ABD00F86223 /* createPostView.swift */,
+				1975CEF028CF10EB00F86223 /* AppTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		195AD5E128CE4D06003A3024 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				195AD5E228CE4D30003A3024 /* GetAPIModel.swift */,
+				195AD5E628CE52B7003A3024 /* PostApiModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		19D6953928CD15BF0079AC94 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +106,11 @@
 		19D6954428CD15BF0079AC94 /* ApiCallGetAndPost */ = {
 			isa = PBXGroup;
 			children = (
+				195AD5E128CE4D06003A3024 /* Model */,
+				195AD5E028CE4CF8003A3024 /* View */,
+				195AD5DF28CE4CED003A3024 /* ViewModel */,
+				195AD5DC28CE4C50003A3024 /* WebServices */,
 				19D6954528CD15BF0079AC94 /* ApiCallGetAndPostApp.swift */,
-				19D6954728CD15BF0079AC94 /* ContentView.swift */,
 				19D6954928CD15C30079AC94 /* Assets.xcassets */,
 				19D6954B28CD15C30079AC94 /* Preview Content */,
 			);
@@ -83,6 +141,9 @@
 			dependencies = (
 			);
 			name = ApiCallGetAndPost;
+			packageProductDependencies = (
+				195AD5DA28CE4A0A003A3024 /* Alamofire */,
+			);
 			productName = ApiCallGetAndPost;
 			productReference = 19D6954228CD15BF0079AC94 /* ApiCallGetAndPost.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +172,9 @@
 				Base,
 			);
 			mainGroup = 19D6953928CD15BF0079AC94;
+			packageReferences = (
+				195AD5D928CE4A0A003A3024 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 19D6954328CD15BF0079AC94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195AD5EB28CE533B003A3024 /* PostViewModel.swift in Sources */,
+				195AD5E528CE4D74003A3024 /* GetViewModel.swift in Sources */,
+				195AD5E328CE4D30003A3024 /* GetAPIModel.swift in Sources */,
+				195AD5E928CE52FE003A3024 /* ApiRequestPost.swift in Sources */,
+				1975CEEF28CF0ABD00F86223 /* createPostView.swift in Sources */,
+				195AD5E728CE52B7003A3024 /* PostApiModel.swift in Sources */,
 				19D6954828CD15BF0079AC94 /* ContentView.swift in Sources */,
 				19D6954628CD15BF0079AC94 /* ApiCallGetAndPostApp.swift in Sources */,
+				195AD5DE28CE4C69003A3024 /* ApiRequestGet.swift in Sources */,
+				1975CEF128CF10EB00F86223 /* AppTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		195AD5D928CE4A0A003A3024 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		195AD5DA28CE4A0A003A3024 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 195AD5D928CE4A0A003A3024 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19D6953A28CD15BF0079AC94 /* Project object */;
 }
